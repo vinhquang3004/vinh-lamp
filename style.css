@@ -1,0 +1,269 @@
+/* - position */
+/* - display & box model */
+/* - color  */
+/* - text  */
+/* - transition & animation */
+
+:root {
+  --primary-color: rgb(0, 142, 90);
+  --white-color: #fff;
+  --background-color: rgb(40, 39, 57);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+input,
+textarea,
+select,
+button {
+  outline: none;
+}
+input {
+  line-height: normal;
+}
+label,
+button {
+  cursor: pointer;
+}
+a {
+  text-decoration: none;
+}
+/* img {
+  display: block;
+  max-width: 100%;
+} */
+body {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  background-color: #1d2026;
+}
+/* - header - navbar*/
+.header {
+  width: 100%;
+  background-color: var(--background-color);
+}
+.nav-bar {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  padding: 5px 5%;
+}
+.nav-bar-menu {
+  width: 40px;
+  margin: 0 20px;
+}
+.nav-bar-menu-icon {
+  position: relative;
+  left: 6px;
+
+  display: block;
+  text-align: center;
+
+  font-size: 2rem;
+  color: var(--white-color);
+
+  cursor: pointer;
+}
+/* - logo */
+.nav-bar-menu-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+
+  cursor: pointer;
+}
+
+.nav-bar-logo-vinh {
+  color: var(--white-color);
+  padding-right: 5px;
+}
+.nav-bar-logo-quang {
+  color: var(--primary-color);
+}
+/* - logo */
+
+/* - ul - li */
+.nav-bar-list {
+  display: flex;
+  list-style: none;
+
+  margin-left: auto;
+}
+.nav-bar-item {
+  display: inline-block;
+  margin: 0 15px;
+  padding: 5px;
+}
+
+.nav-bar-item-link {
+  text-decoration: none;
+  color: var(--white-color);
+}
+/* - ul - li */
+/* + button switch */
+.nav-bar-btn {
+  position: relative;
+
+  background-color: var(--white-color);
+  width: 80px;
+  height: 40px;
+  outline: 0;
+  border: 0;
+  border-radius: 40px;
+
+  transition: background-color 0.5s, margin-left 0.5s;
+}
+.nav-bar-btn-circle {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+
+  display: block;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+
+  background-color: #ccc;
+
+  transition: background-color 0.5s, margin-left 0.5s;
+
+}
+
+/* .nav-bar-btn:focus .nav-bar-btn-circle {
+  transform: translateX(40px);
+} */
+/* + button switch */
+
+/* - header - navbar*/
+
+/* - contain */
+.contain {
+  position: relative;
+  width: 100%;
+  height: 90vh;
+  background-color: var(--background-color);
+}
+.contain-heading {
+  margin-left: 50%;
+  padding-top: 7%;
+  max-width: 500px;
+}
+.heading-title {
+  padding: 20px 0;
+
+  font-size: 5rem;
+  font-weight: 500;
+  color: var(--white-color);
+}
+.heading-content {
+  padding: 20px 0;
+
+  color: var(--white-color);
+}
+.contain-btn {
+  margin-top: 10px;
+  width: 200px;
+  height: 50px;
+
+  background-color: var(--primary-color);
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  cursor: pointer;
+}
+.contain-btn-check {
+  color: var(--white-color);
+}
+/* + lemp */
+.contain-lemp {
+  position: absolute;
+  top: -100px;
+  left: 20%;
+  width: 200px;
+}
+.contain-lemp-img {
+  width: 100%;
+}
+.contain-lemp-img-light {
+  position: absolute;
+  top: 97%;
+  left: 46%;
+
+  width: 700px;
+  height: 350px;
+
+  transform: translateX(-50%);
+  opacity: 0;
+
+  transition: opacity 1s;
+}
+/* + lemp */
+
+/* + control light */
+
+.contain-control{
+  position: absolute;
+  left: 70%;
+  top: 90%;
+  width: 300px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: var(--white-color);
+
+}
+.contain-control p{
+}
+.control-line{
+  position: relative;
+  flex: 1;
+  max-width: 200px;
+  height: 5px;
+  background-color: var(--white-color);
+  border-radius: 2px;
+  margin: 0 10px;
+
+}
+.control-line span{
+  display: block;
+  position: absolute;
+  background-color: var(--primary-color);
+  top: -1px;
+  width: 50%;
+  height: 7px;
+  border-radius: 2px;
+}
+/* + control light */
+/* - contain */
+
+
+.active {
+  background-color: var(--primary-color);
+
+}
+
+.active .nav-bar-btn-circle{
+  background-color: #fff;
+  margin-left: 40px;
+}
+
+.on-off{
+  opacity: 1;
+}

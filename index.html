@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- - header -->
+    <div class="header">
+      <nav class="nav-bar">
+        <span class="nav-bar-menu">
+          <i class="nav-bar-menu-icon fas fa-bars"></i>
+        </span>
+        <span class="nav-bar-menu-logo">
+          <h1 class="nav-bar-logo-vinh">VINH</h1>
+          <h1 class="nav-bar-logo-quang">lamp</h1>
+        </span>
+
+        <ul class="nav-bar-list">
+          <li class="nav-bar-item">
+            <a href="" class="nav-bar-item-link"> Lastest </a>
+          </li>
+          <li class="nav-bar-item">
+            <a href="" class="nav-bar-item-link"> Modern </a>
+          </li>
+          <li class="nav-bar-item">
+            <a href="" class="nav-bar-item-link"> Contemporary </a>
+          </li>
+          <li class="nav-bar-item">
+            <a href="" class="nav-bar-item-link"> Affordable </a>
+          </li>
+        </ul>
+        <button class="nav-bar-btn" onclick="toggleLempBtn()" id="btn-lemp">
+          <span class="nav-bar-btn-circle"></span>
+        </button>
+      </nav>
+    </div>
+    <!-- - header -->
+    <!-- - contain -->
+    <div class="contain">
+      <!-- + lemp -->
+      <div class="contain-lemp">
+        <img src="./asset/img/lamp.png" alt="" class="contain-lemp-img" />
+        <img
+          src="./asset/img/light.png"
+          alt=""
+          class="contain-lemp-img-light"
+          id="on-off"
+        />
+      </div>
+      <!-- + lemp -->
+
+      <div class="contain-heading">
+        <h2 class="heading-title">Lastest in lighting</h2>
+        <p class="heading-content">
+          This is the first from our company. we're making a huge collectin of
+          modern Lampes in all categories from home use to office use.
+        </p>
+        <div class="contain-btn">
+          <span class="contain-btn-check">Check All Collection</span>
+        </div>
+      </div>
+
+      <!-- + control light -->
+      <div class="contain-control">
+        <p>04</p>
+        <div class="control-line">
+          <span></span>
+        </div>
+        <p>05</p>
+      </div>
+      <!-- + control light -->
+    </div>
+    <!-- - contain -->
+
+    <script>
+      const btn = document.getElementById("btn-lemp");
+      const light = document.getElementById("on-off");
+
+      function toggleLempBtn() {
+        btn.classList.toggle("active");
+        light.classList.toggle("on-off");
+      }
+    </script>
+  </body>
+</html>
